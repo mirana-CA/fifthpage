@@ -1,0 +1,520 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+/* HEADER START  */
+header {
+  background-color: #BD5D38;
+  height: 100vh;
+  width: 276px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+header nav img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 8px solid #CA7D60;
+  margin-bottom: 10px;
+}
+
+header nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul li a {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header nav ul li a:active {
+  color: #fff;
+}
+
+header .responsive_menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  padding: 0 40px;
+}
+
+header .responsive_menu h1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+header .responsive_menu i {
+  padding: 4px 12px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+@media only screen and (max-width:1000px) {
+  header {
+    background-color: #BD5D38;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .responsive_menu {
+    display: flex;
+  }
+}
+
+/* HEADER END   */
+section {
+  margin-left: 276px;
+  max-width: 1200px;
+}
+
+hr{
+  opacity: 0.25;
+}
+
+/* ABOUT START  */
+#about {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  height: 100%;
+
+  padding: 0 36px;
+}
+
+.about_container h1 {
+  display: flex;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 96px;
+  color: #343a40;
+}
+
+.about_container h1 span {
+  color: #BD5D38;
+  font-family: "Saira Extra Condensed", sans-serif;
+  margin-left: 10px;
+}
+
+.about_container .about_details {
+  font-size: 24px;
+  color: #6c757d;
+  font-family: "Saira Extra Condensed", sans-serif;
+  margin: -24px 0 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about_container .about_details a {
+  font-size: 24px;
+  color: #BD5D38;
+  font-family: "Saira Extra Condensed", sans-serif;
+  margin-bottom: 48px;
+  transition-duration: 200ms;
+  text-decoration: underline;
+}
+
+.about_container .about_details a:hover {
+  color: #974a2d;
+
+}
+
+.about_container .about_intoduction {
+  font-size: 19px;
+  color: #6c757d;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.about_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about_links i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.about_links i:hover {
+  background-color: #BD5D38;
+
+}
+
+@media only screen and (max-width:1000px) {
+  section {
+    margin-left: 0px;
+  }
+
+  .about_container h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width:766px) {
+  .about_container h1 {
+    font-size: 70px;
+  }
+
+  #about {
+    margin-top: 100px;
+    min-height: 50vh;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width:450px) {
+  .about_container h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media only screen and (max-width:450px) {
+  .about_container h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* ABOUT END  */
+
+/* EXPERIENCE START  */
+#experiece {
+  padding: 80px 48px;
+}
+
+#experiece h2 {
+  font-size: 56px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+
+.experiences_container_item_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experiences_container_item_heading h3 {
+  font-size: 32px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.experiences_container_item_heading p {
+  color: #BD5D38;
+}
+
+.experiences_container_item_company {
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #6c757d;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.experiences_container_item_text {
+  color: #6c757d;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: calc(100% - 200px);
+}
+
+.experiences_container {
+  display: grid;
+  gap: 32px;
+}
+
+.experiences_container_item__date {
+  color: #BD5D38;
+  display: none;
+
+}
+
+@media only screen and (max-width:766px) {
+  .experiences_container_item__date {
+    display: block;
+
+  }
+
+  .experiences_container_item_heading p {
+    display: none;
+  }
+
+  .experiences_container_item_text {
+
+    max-width: 100%;
+  }
+}
+
+/* EXPERIENCE END  */
+
+/* EDUCATION START  */
+#education {
+  padding: 80px 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#education h2 {
+  font-size: 56px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+.education_container {
+  display: grid;
+  gap: 32px;
+}
+
+.education_container_item_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education_container_item_heading h3 {
+  font-size: 32px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.education_container_item_heading p {
+  color: #BD5D38;
+}
+
+.education_container_item_company {
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #6c757d;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.education_container_item_text {
+  color: #6c757d;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: calc(100% - 200px);
+}
+
+
+.education_container_item__date {
+  color: #BD5D38;
+  display: none;
+
+}
+
+@media only screen and (max-width:766px) {
+  .education_container_item__date {
+    display: block;
+
+  }
+
+  .education_container_item_heading p {
+    display: none;
+  }
+
+  .education_container_item_text {
+
+    max-width: 100%;
+  }
+  #education {
+    min-height: auto;
+  }
+  
+}
+
+/* EDUCATION END  */
+
+/* SKILLS START  */
+
+#skills {
+  padding: 80px 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills h2 {
+  font-size: 56px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+
+.skills_item_title {
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.programming_skills {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #6c757d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.skills_item_content div {
+  color: #6c757d;
+  margin-left: 15px;
+  padding: 3px 0;
+}
+
+.skills_item_content div i {
+
+  padding-right: 3px;
+}
+@media only screen and (max-width:766px) {
+
+  #skills {
+    min-height: auto;
+  }
+  
+}
+
+/* SKILLS END  */
+
+/* INTERESTS START  */
+#interests {
+  padding: 80px 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#interests h2 {
+  font-size: 56px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+
+#interests P{
+color: #6c757d;
+margin-bottom: 16px;
+}
+@media only screen and (max-width:766px) {
+
+  #interests {
+    min-height: auto;
+  }
+  
+}
+/* INTERESTS END  */
+
+/* AWARDS START  */
+#awards {
+  padding: 80px 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#awards h2 {
+  font-size: 56px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+.awards_content div{
+  margin: 5px 20px;
+}
+.awards_content div span{
+  color: #6c757d;
+}
+.awards_content div i{
+  color: #FFC107;
+  margin-right: 5px;
+}
+@media only screen and (max-width:766px) {
+
+  #awards {
+    min-height: auto;
+  }
+  
+}
+/* AWARDS END  */

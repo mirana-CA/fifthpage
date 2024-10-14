@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Saira Extra Condensed", sans-serif; */
+  font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
+}
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
